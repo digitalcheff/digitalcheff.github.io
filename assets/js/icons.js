@@ -1,5 +1,5 @@
 export const ICONS = {
-  digitalcheff: "/assets/icons/digitalcheff.svg",
+  digitalcheff: "/assets/icons/digitalcheff-64.png",
   axis6: "/assets/icons/axis6-128.png",
   pomovane: "/assets/icons/pomovane.svg",
   glitchwatch: "/assets/icons/glitchwatch.svg",

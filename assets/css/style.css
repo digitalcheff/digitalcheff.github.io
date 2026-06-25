@@ -139,7 +139,10 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   letter-spacing: -0.02em;
 }
 
-.brand__mark { border-radius: 0.5rem; }
+.brand__mark {
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
 
 .brand__accent { color: var(--amber); }
 
