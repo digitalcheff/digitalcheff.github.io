@@ -108,7 +108,7 @@ export const WEB = [
       tr: "CI ve deploy hataları tek gelen kutusunda — GitHub webhook, web ve iOS.",
     },
     icon: "📡",
-    iconSrc: "/assets/icons/glitchwatch.svg",
+    iconSrc: "/assets/icons/glitchwatch-128.png",
     category: { en: "Developer tools", tr: "Geliştirici araçları" },
     status: "live",
     tags: ["Web", "iOS", "GitHub"],

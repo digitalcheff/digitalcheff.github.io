@@ -2,7 +2,7 @@ export const ICONS = {
   digitalcheff: "/assets/icons/digitalcheff-64.png",
   axis6: "/assets/icons/axis6-128.png",
   pomovane: "/assets/icons/pomovane.svg",
-  glitchwatch: "/assets/icons/glitchwatch.svg",
+  glitchwatch: "/assets/icons/glitchwatch-128.png",
   aiwaitindex: "/assets/icons/aiwaitindex.svg",
 }
 
