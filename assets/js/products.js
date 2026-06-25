@@ -21,7 +21,7 @@ export const APPS = [
       tr: "Tek görev. Tek zamanlayıcı. Akışta kal.",
     },
     icon: "🍅",
-    iconSrc: "/assets/icons/pomovane-128.png",
+    iconSrc: "/assets/icons/pomovane-128.png?v=11",
     iconBg: "linear-gradient(135deg, #ef4444, #dc2626)",
     category: { en: "Productivity", tr: "Üretkenlik" },
     status: "soon",
