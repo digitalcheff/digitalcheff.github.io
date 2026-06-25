@@ -1,9 +1,10 @@
 export const ICONS = {
   digitalcheff: "/assets/icons/digitalcheff-64.png",
   axis6: "/assets/icons/axis6-128.png",
-  pomovane: "/assets/icons/pomovane.svg",
+  pomovane: "/assets/icons/pomovane-128.png",
+  renewalHub: "/assets/icons/renewal-hub-128.png",
   glitchwatch: "/assets/icons/glitchwatch-128.png",
-  aiwaitindex: "/assets/icons/aiwaitindex.svg",
+  aiwaitindex: "/assets/icons/aiwaitindex-128.png",
 }
 
 export function renderProductIcon(item) {
