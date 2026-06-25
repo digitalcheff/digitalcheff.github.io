@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigitalCheff — Mobile Games & Apps Studio</title>
+  <meta name="description" content="DigitalCheff — independent mobile games and apps studio. Pomovane, Renewal Hub, AXIS 6, and more.">
+  <meta name="theme-color" content="#0c0a09">
+  <meta property="og:title" content="DigitalCheff">
+  <meta property="og:description" content="Independent mobile studio — products we design, build, and ship for iOS and Android.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://digitalcheff.com">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__orb ambient__orb--1"></div>
+    <div class="ambient__orb ambient__orb--2"></div>
+    <div class="ambient__orb ambient__orb--3"></div>
+    <div class="ambient__noise"></div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" data-i18n-aria="brandAria">
+        <img class="brand__mark" src="/favicon.svg" alt="" width="36" height="36">
+        <span class="brand__text">Digital<span class="brand__accent">Cheff</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main menu" data-i18n-aria="nav.main">
+        <a href="#apps" data-i18n="nav.apps">Apps</a>
+        <a href="#games" data-i18n="nav.games">Games</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Türkçe">Türkçe</button>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle lang-toggle--mobile-header" id="lang-toggle-mobile" type="button" aria-label="Türkçe">TR</button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-i18n-aria="nav.menuOpen">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" hidden aria-label="Mobile menu">
+      <a href="#apps" data-i18n="nav.apps">Apps</a>
+      <a href="#games" data-i18n="nav.games">Games</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Independent mobile studio</p>
+          <h1 class="hero__title">
+            <span data-i18n="hero.titleBefore">Games and apps</span><br>
+            <em data-i18n="hero.titleEm">from one kitchen.</em>
+          </h1>
+          <p class="hero__lead" data-i18n="hero.lead">
+            DigitalCheff builds thoughtful mobile products for iOS and Android — from focus and habits to games. Every release is designed, coded, and shipped in-house.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#apps" data-i18n="hero.cta">Explore apps</a>
+            <a class="btn btn--ghost" href="mailto:hello@digitalcheff.com">hello@digitalcheff.com</a>
+          </div>
+          <dl class="hero__stats">
+            <div>
+              <dt>6</dt>
+              <dd data-i18n="hero.statApps">Apps</dd>
+            </div>
+            <div>
+              <dt>2</dt>
+              <dd data-i18n="hero.statGames">Games</dd>
+            </div>
+            <div>
+              <dt>iOS &amp; Android</dt>
+              <dd data-i18n="hero.statPlatform">Platform</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero__visual reveal reveal--delay" aria-hidden="true">
+          <div class="hero-card hero-card--back"></div>
+          <div class="hero-card hero-card--mid"></div>
+          <div class="hero-card hero-card--front">
+            <div class="hero-card__icon">🍅</div>
+            <p class="hero-card__label">Pomovane</p>
+            <p class="hero-card__tag">One task. One timer.</p>
+            <div class="hero-card__bar" role="presentation"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="apps">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow" data-i18n="apps.eyebrow">Apps</p>
+          <h2 data-i18n="apps.title">Tools for everyday life</h2>
+          <p class="section__lead" data-i18n="apps.lead">Productivity, health, and life-management apps — currently in development.</p>
+        </header>
+        <div class="product-grid" id="apps-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="games">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow" data-i18n="games.eyebrow">Games</p>
+          <h2 data-i18n="games.title">Play-first experiences</h2>
+          <p class="section__lead" data-i18n="games.lead">Mobile games — from competitive rounds to physics puzzles.</p>
+        </header>
+        <div class="product-grid product-grid--games" id="games-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__copy reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+          <h2 data-i18n="about.title">What is DigitalCheff?</h2>
+          <p data-i18n="about.p1">
+            DigitalCheff is an independent mobile studio. Each product is built end to end: concept, interface, code, and store release.
+          </p>
+          <p data-i18n="about.p2">
+            We ship with React, TypeScript, Capacitor, and Unity — with privacy, clarity, and real user needs at the center.
+          </p>
+          <ul class="about__values" id="about-values"></ul>
+        </div>
+        <aside class="about__panel reveal reveal--delay">
+          <div class="about__panel-inner">
+            <p class="about__panel-label" data-i18n="about.tech">Stack</p>
+            <ul class="tech-list">
+              <li>React &amp; TypeScript</li>
+              <li>Capacitor (iOS / Android)</li>
+              <li>Unity 6</li>
+              <li>Supabase &amp; RevenueCat</li>
+            </ul>
+            <p class="about__panel-label" data-i18n="about.support">Support</p>
+            <a class="about__email" href="mailto:hello@digitalcheff.com">hello@digitalcheff.com</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact">
+      <div class="container contact reveal">
+        <div class="contact__inner">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 data-i18n="contact.title">Get in touch</h2>
+          <p class="contact__lead" data-i18n="contact.lead">Feedback, partnerships, or press — reach us by email.</p>
+          <div class="social-grid" id="social-grid"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <img src="/favicon.svg" alt="" width="28" height="28">
+        <span>© <span id="year"></span> DigitalCheff</span>
+      </div>
+      <nav class="site-footer__links" aria-label="Footer links" data-i18n-aria="nav.footer">
+        <a href="/axis6-privacy/" data-i18n="footer.axisPrivacy">AXIS 6 Privacy</a>
+        <a href="mailto:hello@digitalcheff.com" data-i18n="footer.support">Support</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" type="module"></script>
+</body>
+</html>
