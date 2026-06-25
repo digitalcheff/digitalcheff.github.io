@@ -108,6 +108,12 @@ function renderProducts(lang) {
 
 function observeReveals() {
   document.querySelectorAll(".reveal:not(.is-visible)").forEach((el) => {
+    const rect = el.getBoundingClientRect()
+    if (rect.top < window.innerHeight * 0.92) {
+      el.classList.add("is-visible")
+      return
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -117,7 +123,7 @@ function observeReveals() {
           }
         })
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.08, rootMargin: "0px 0px -24px 0px" }
     )
     observer.observe(el)
   })

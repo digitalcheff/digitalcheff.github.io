@@ -27,6 +27,7 @@ export const COPY = {
       lead:
         "DigitalCheff builds thoughtful mobile products for iOS and Android — from focus and habits to games. Every release is designed, coded, and shipped in-house.",
       cta: "Explore apps",
+      emailCta: "Email us",
       statApps: "Apps",
       statGames: "Games",
       statPlatform: "Platform",
@@ -116,6 +117,7 @@ export const COPY = {
       lead:
         "DigitalCheff, iOS ve Android için düşünülmüş mobil ürünler geliştirir — odaklanmadan alışkanlığa, üretkenlikten oyuna. Her sürüm stüdyo içinde tasarlanır, kodlanır ve yayınlanır.",
       cta: "Uygulamaları keşfet",
+      emailCta: "E-posta gönder",
       statApps: "Uygulama",
       statGames: "Oyun",
       statPlatform: "Platform",
