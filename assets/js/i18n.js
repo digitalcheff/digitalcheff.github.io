@@ -13,6 +13,7 @@ export const COPY = {
     brandAria: "DigitalCheff home",
     nav: {
       apps: "Apps",
+      web: "Web",
       games: "Games",
       about: "About",
       contact: "Contact",
@@ -30,14 +31,19 @@ export const COPY = {
       emailCta: "Email us",
       spotlightLabel: "Featured app",
       spotlightPomovane: "One task. One timer. Stay in flow.",
-      statApps: "Apps",
+      statApps: "Mobile apps",
+      statWeb: "Web",
       statGames: "Games",
-      statPlatform: "Platform",
     },
     apps: {
       eyebrow: "Apps",
       title: "Tools for everyday life",
       lead: "Productivity, health, and life-management apps — currently in development.",
+    },
+    web: {
+      eyebrow: "Web",
+      title: "Live web products",
+      lead: "Research tools and developer dashboards — shipped and available today.",
     },
     games: {
       eyebrow: "Games",
@@ -84,6 +90,7 @@ export const COPY = {
     },
     card: {
       noLinks: "Store links coming soon",
+      visit: "Visit site",
     },
     social: {
       email: "Email",
@@ -105,6 +112,7 @@ export const COPY = {
     brandAria: "DigitalCheff ana sayfa",
     nav: {
       apps: "Uygulamalar",
+      web: "Web",
       games: "Oyunlar",
       about: "Hakkında",
       contact: "İletişim",
@@ -122,14 +130,19 @@ export const COPY = {
       emailCta: "E-posta gönder",
       spotlightLabel: "Öne çıkan uygulama",
       spotlightPomovane: "Tek görev. Tek zamanlayıcı. Akışta kal.",
-      statApps: "Uygulama",
+      statApps: "Mobil uygulama",
+      statWeb: "Web",
       statGames: "Oyun",
-      statPlatform: "Platform",
     },
     apps: {
       eyebrow: "Uygulamalar",
       title: "Günlük hayatı kolaylaştıran araçlar",
       lead: "Üretkenlik, sağlık ve yaşam yönetimi uygulamaları — şu an geliştirme aşamasında.",
+    },
+    web: {
+      eyebrow: "Web",
+      title: "Yayında olan web ürünleri",
+      lead: "Araştırma araçları ve geliştirici panelleri — bugün kullanılabilir.",
     },
     games: {
       eyebrow: "Oyunlar",
@@ -176,6 +189,7 @@ export const COPY = {
     },
     card: {
       noLinks: "Mağaza bağlantısı yakında",
+      visit: "Siteyi ziyaret et",
     },
     social: {
       email: "E-posta",

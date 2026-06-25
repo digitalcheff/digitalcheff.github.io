@@ -1,4 +1,4 @@
-import { APPS, GAMES } from "./products.js"
+import { APPS, GAMES, WEB } from "./products.js"
 import { COPY, CONTACT_EMAIL, getLang, setLang, t } from "./i18n.js"
 import { renderProductIcon } from "./icons.js"
 
@@ -96,6 +96,7 @@ function applyStaticCopy(lang) {
 
 function renderProducts(lang) {
   document.getElementById("apps-grid").innerHTML = APPS.map((item) => renderProductCard(item, lang)).join("")
+  document.getElementById("web-grid").innerHTML = WEB.map((item) => renderProductCard(item, lang)).join("")
   document.getElementById("games-grid").innerHTML = GAMES.map((item) => renderProductCard(item, lang)).join("")
 
   const emailLabel = t(lang, "social.email")

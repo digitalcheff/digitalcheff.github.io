@@ -2,7 +2,8 @@ export const ICONS = {
   digitalcheff: "/assets/icons/digitalcheff.svg",
   axis6: "/assets/icons/axis6-128.png",
   pomovane: "/assets/icons/pomovane.svg",
-  renewalHub: "/assets/icons/renewal-hub.svg",
+  glitchwatch: "/assets/icons/glitchwatch.svg",
+  aiwaitindex: "/assets/icons/aiwaitindex.svg",
 }
 
 export function renderProductIcon(item) {

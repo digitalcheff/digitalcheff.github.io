@@ -81,6 +81,47 @@ export const APPS = [
   },
 ]
 
+export const WEB = [
+  {
+    name: "AIWaitIndex",
+    tagline: {
+      en: "Compare AI wait-state ad platforms — honest data and earnings estimates.",
+      tr: "AI bekleme süresi reklam platformlarını karşılaştır — şeffaf veri ve kazanç tahminleri.",
+    },
+    icon: "📊",
+    iconSrc: "/assets/icons/aiwaitindex.svg",
+    category: { en: "Research", tr: "Araştırma" },
+    status: "live",
+    tags: ["Web", "AI"],
+    links: [
+      {
+        label: { en: "Visit site", tr: "Siteyi ziyaret et" },
+        href: "https://aiwaitindex.com",
+        primary: true,
+      },
+    ],
+  },
+  {
+    name: "Glitchwatch",
+    tagline: {
+      en: "CI and deploy failures in one inbox — GitHub webhook, web and iOS.",
+      tr: "CI ve deploy hataları tek gelen kutusunda — GitHub webhook, web ve iOS.",
+    },
+    icon: "📡",
+    iconSrc: "/assets/icons/glitchwatch.svg",
+    category: { en: "Developer tools", tr: "Geliştirici araçları" },
+    status: "live",
+    tags: ["Web", "iOS", "GitHub"],
+    links: [
+      {
+        label: { en: "Visit site", tr: "Siteyi ziyaret et" },
+        href: "https://fleet-manager-roan.vercel.app",
+        primary: true,
+      },
+    ],
+  },
+]
+
 export const GAMES = [
   {
     name: "AXIS 6",
