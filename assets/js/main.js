@@ -1,5 +1,6 @@
 import { APPS, GAMES } from "./products.js"
 import { COPY, CONTACT_EMAIL, getLang, setLang, t } from "./i18n.js"
+import { renderProductIcon } from "./icons.js"
 
 const EMAIL_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>`
 
@@ -30,7 +31,7 @@ function renderProductCard(item, lang) {
   return `
     <article class="product-card reveal">
       <div class="product-card__top">
-        <div class="product-card__icon" style="background:${item.iconBg}">${item.icon}</div>
+        <div class="product-card__icon${item.iconSrc ? " product-card__icon--image" : ""}"${item.iconSrc ? "" : ` style="background:${item.iconBg}"`}>${renderProductIcon(item)}</div>
         <span class="product-card__badge ${badgeClass(item.status)}">${statusLabel}</span>
       </div>
       <h3 class="product-card__name">${item.name}</h3>

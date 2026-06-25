@@ -432,11 +432,49 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   height: 3.35rem;
   display: grid;
   place-items: center;
-  font-size: 1.7rem;
   border-radius: 0.9rem;
   background: linear-gradient(135deg, #ef4444, #b91c1c);
   box-shadow: 0 8px 20px rgba(239, 68, 68, 0.28);
   flex-shrink: 0;
+}
+
+.spotlight-card__icon--image {
+  padding: 0.35rem;
+  background: #18181b;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+}
+
+.spotlight-card__icon--image img,
+.hero-card__icon--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.hero-card__icon--image {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.35rem;
+  border-radius: 0.75rem;
+  background: #18181b;
+  border: 1px solid var(--border);
+  margin-bottom: 0.75rem;
+}
+
+.spotlight-card__chip--image {
+  padding: 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+}
+
+.spotlight-card__chip--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .spotlight-card__body {
@@ -592,6 +630,20 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   border-radius: var(--radius-sm);
   font-size: 1.5rem;
   flex-shrink: 0;
+}
+
+.product-card__icon--image {
+  padding: 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+}
+
+.product-card__icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .product-card__badge {

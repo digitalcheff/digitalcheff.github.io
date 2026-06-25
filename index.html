@@ -10,11 +10,11 @@
   <meta property="og:description" content="Independent mobile studio — products we design, build, and ship for iOS and Android.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://digitalcheff.com">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/icons/digitalcheff.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css?v=5">
+  <link rel="stylesheet" href="/assets/css/style.css?v=6">
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
@@ -29,7 +29,7 @@
   <header class="site-header" id="top">
     <div class="container site-header__inner">
       <a class="brand" href="#top" data-i18n-aria="brandAria">
-        <img class="brand__mark" src="/favicon.svg" alt="" width="36" height="36">
+        <img class="brand__mark" src="/assets/icons/digitalcheff.svg" alt="" width="36" height="36">
         <span class="brand__text">Digital<span class="brand__accent">Cheff</span></span>
       </a>
       <nav class="site-nav" aria-label="Main menu" data-i18n-aria="nav.main">
@@ -62,7 +62,9 @@
 
           <div class="hero-spotlight" aria-hidden="true">
             <article class="spotlight-card spotlight-card--lead">
-              <div class="spotlight-card__icon">🍅</div>
+              <div class="spotlight-card__icon spotlight-card__icon--image">
+                <img src="/assets/icons/pomovane.svg" alt="" width="54" height="54" decoding="async">
+              </div>
               <div class="spotlight-card__body">
                 <p class="spotlight-card__eyebrow" data-i18n="hero.spotlightLabel">Featured app</p>
                 <p class="spotlight-card__name">Pomovane</p>
@@ -72,11 +74,15 @@
             </article>
             <div class="spotlight-row">
               <article class="spotlight-card spotlight-card--compact">
-                <span class="spotlight-card__chip" style="background: linear-gradient(135deg, #f59e0b, #d97706)">🎯</span>
+                <span class="spotlight-card__chip spotlight-card__chip--image">
+                  <img src="/assets/icons/axis6-128.png" alt="" width="32" height="32" decoding="async">
+                </span>
                 <span class="spotlight-card__compact-name">AXIS 6</span>
               </article>
               <article class="spotlight-card spotlight-card--compact">
-                <span class="spotlight-card__chip" style="background: linear-gradient(135deg, #6366f1, #4f46e5)">📋</span>
+                <span class="spotlight-card__chip spotlight-card__chip--image">
+                  <img src="/assets/icons/renewal-hub.svg" alt="" width="32" height="32" decoding="async">
+                </span>
                 <span class="spotlight-card__compact-name">Renewal Hub</span>
               </article>
             </div>
@@ -113,7 +119,9 @@
             <div class="hero-card hero-card--back"></div>
             <div class="hero-card hero-card--mid"></div>
             <div class="hero-card hero-card--front">
-              <div class="hero-card__icon">🍅</div>
+              <div class="hero-card__icon hero-card__icon--image">
+                <img src="/assets/icons/pomovane.svg" alt="" width="40" height="40" decoding="async">
+              </div>
               <p class="hero-card__label">Pomovane</p>
               <p class="hero-card__tag">One task. One timer.</p>
               <div class="hero-card__bar" role="presentation"><span></span></div>
@@ -189,7 +197,7 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div class="site-footer__brand">
-        <img src="/favicon.svg" alt="" width="28" height="28">
+        <img src="/assets/icons/digitalcheff.svg" alt="" width="28" height="28">
         <span>© <span id="year"></span> DigitalCheff</span>
       </div>
       <nav class="site-footer__links" aria-label="Footer links" data-i18n-aria="nav.footer">
@@ -199,6 +207,6 @@
     </div>
   </footer>
 
-  <script src="/assets/js/main.js?v=5" type="module"></script>
+  <script src="/assets/js/main.js?v=6" type="module"></script>
 </body>
 </html>
