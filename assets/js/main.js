@@ -130,11 +130,10 @@ function observeReveals() {
 }
 
 function initReveal() {
-  const els = document.querySelectorAll(".reveal")
-  if (!window.IntersectionObserver) {
-    els.forEach((el) => el.classList.add("is-visible"))
-    return
-  }
+  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  if (prefersReduced || !window.IntersectionObserver) return
+
+  document.documentElement.classList.add("js-reveal")
   observeReveals()
 }
 

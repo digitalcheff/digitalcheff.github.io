@@ -328,8 +328,8 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   color: var(--text-dim);
 }
 
-/* Hero visual cards */
-.hero__visual {
+/* Hero visual cards — desktop only */
+.hero__visual--desktop {
   position: relative;
   min-height: 340px;
   display: flex;
@@ -434,7 +434,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 /* Product grid */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17.5rem), 1fr));
   gap: 1.25rem;
 }
 
@@ -756,90 +756,81 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 
 .site-footer__links a:hover { color: var(--text-muted); }
 
-/* Reveal animations */
+/* Reveal animations — progressive enhancement only */
 .reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  opacity: 1;
+  transform: none;
 }
 
-.reveal.is-visible {
+html.js-reveal .reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.55s var(--ease), transform 0.55s var(--ease);
+}
+
+html.js-reveal .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-.reveal--delay { transition-delay: 0.12s; }
+.reveal--delay { transition-delay: 0.1s; }
 
 /* Responsive */
 @media (max-width: 900px) {
+  .hero__visual--desktop {
+    display: none !important;
+  }
+
   .hero__grid,
   .about {
     grid-template-columns: 1fr;
   }
 
   .hero {
-    padding: 1.75rem 0 2.75rem;
+    padding: 1.25rem 0 2.25rem;
   }
 
   .hero__grid {
-    gap: 1.75rem;
-  }
-
-  .hero__copy {
-    order: 1;
-  }
-
-  .hero__visual {
-    order: 2;
-    min-height: 0;
-    max-width: 100%;
-    width: 100%;
-    margin-inline: 0;
-    padding: 0;
-  }
-
-  .hero-card--back,
-  .hero-card--mid {
-    display: none;
-  }
-
-  .hero-card--front {
-    position: relative;
-    inset: auto;
-    width: 100%;
-    max-width: 18rem;
-    margin-inline: auto;
-    transform: none;
-    padding: 1.25rem 1.35rem;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+    gap: 0;
   }
 
   .hero__title {
-    font-size: clamp(2rem, 8.5vw, 2.85rem);
-    line-height: 1.12;
+    font-size: clamp(1.85rem, 7.8vw, 2.65rem);
+    line-height: 1.14;
+    margin-bottom: 1rem;
   }
 
   .hero__lead {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 1.35rem;
   }
 
   .hero__actions {
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.5rem;
   }
 
   .hero__stats {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.75rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.65rem;
   }
 
   .hero__stats dt {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .hero__stats dd {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    line-height: 1.3;
+  }
+
+  .section {
+    padding: 2.75rem 0;
+  }
+
+  .section__header h2 {
+    font-size: clamp(1.65rem, 6.5vw, 2.2rem);
   }
 
   .site-nav { display: none; }
@@ -905,7 +896,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal {
+  html.js-reveal .reveal {
     opacity: 1;
     transform: none;
     transition: none;
