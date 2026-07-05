@@ -1,6 +1,31 @@
 /** Public product catalog — only verified links and statuses. */
 export const APPS = [
   {
+    name: "Chat Help AI",
+    tagline: {
+      en: "Upload a chat screenshot, pick your vibe — get the perfect AI reply.",
+      tr: "Sohbet ekran görüntüsü yükle, tarzını seç — mükemmel AI cevabını al.",
+    },
+    icon: "💬",
+    iconSrc: "/assets/icons/chat-help-ai-128.png",
+    iconBg: "linear-gradient(135deg, #7c3aed, #db2777)",
+    category: { en: "Lifestyle", tr: "Yaşam" },
+    status: "soon",
+    tags: ["iOS", "AI", "Dating"],
+    links: [
+      {
+        label: { en: "Privacy policy", tr: "Gizlilik politikası" },
+        href: "/chat-help-ai/privacy/",
+        primary: false,
+      },
+      {
+        label: { en: "Support", tr: "Destek" },
+        href: "/chat-help-ai/support/",
+        primary: false,
+      },
+    ],
+  },
+  {
     name: "Renewal Hub",
     tagline: {
       en: "Subscriptions, warranties, and document renewals in one place.",
