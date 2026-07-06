@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat Help AI — Destek</title>
-  <meta name="description" content="Chat Help AI destek sayfası. Sorularınız, abonelik ve geri yükleme yardımı.">
+  <title>Chat Help AI — Support</title>
+  <meta name="description" content="Chat Help AI support. Questions, subscriptions, and restore purchases help.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <style>
     :root {
@@ -60,42 +60,103 @@
       font-weight: 600;
       color: #fff;
     }
+    .lang-toggle { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+    .lang-toggle button {
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      padding: 8px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      font: inherit;
+    }
+    .lang-toggle button.active {
+      background: linear-gradient(135deg, rgba(124,58,237,0.25), rgba(219,39,119,0.2));
+      border-color: rgba(124,58,237,0.5);
+      color: #fff;
+    }
+    [data-lang] { display: none; }
+    [data-lang].active { display: block; }
+    .faq h3 { margin: 1.25rem 0 0.35rem; font-size: 1rem; color: #e4e4e7; }
     footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="nav"><a href="https://digitalcheff.com">← DigitalCheff</a> · <a href="../privacy/">Gizlilik Politikası</a></div>
+    <div class="nav"><a href="https://digitalcheff.com">← DigitalCheff</a> · <a href="../privacy/">Privacy Policy</a></div>
     <span class="badge">Chat Help AI</span>
-    <h1>Destek / Support</h1>
-    <p class="lead">Sorularınız, geri bildirim veya abonelik yardımı için bize yazın. Genellikle 1–2 iş günü içinde yanıtlıyoruz.</p>
+    <h1>Support / Destek</h1>
 
-    <div class="card">
-      <strong style="color:#fff">E-posta / Email</strong><br>
-      <a class="email" href="mailto:hello@digitalcheff.com">hello@digitalcheff.com</a>
+    <div class="lang-toggle">
+      <button type="button" data-show="en" class="active">English</button>
+      <button type="button" data-show="tr">Türkçe</button>
     </div>
 
-    <h2>Sık sorulan sorular</h2>
+    <div data-lang="en" class="active">
+      <p class="lead">Questions, feedback, or subscription help? Email us — we usually reply within 1–2 business days.</p>
 
-    <h2 style="margin-top:1.25rem;font-size:1rem;color:#e4e4e7">Ücretsiz kaç hakkım var?</h2>
-    <p>Toplam <strong>3 ücretsiz deneme</strong> hakkınız vardır. Günlük yenilenmez. Premium’a geçince sınırsız kullanım (makul limitler dahilinde) açılır.</p>
+      <div class="card">
+        <strong style="color:#fff">Email</strong><br>
+        <a class="email" href="mailto:hello@digitalcheff.com">hello@digitalcheff.com</a>
+      </div>
 
-    <h2 style="margin-top:1.25rem;font-size:1rem;color:#e4e4e7">Premium satın aldım ama aktif görünmüyor</h2>
-    <p>Ayarlar → <strong>Satın Alımları Geri Yükle</strong>’ye dokunun. Aynı Apple ID ile giriş yaptığınızdan emin olun. Sorun devam ederse e-posta ile App Store sipariş numaranızı gönderin.</p>
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <h3>How many free replies do I get?</h3>
+        <p>You get <strong>3 lifetime trial</strong> generations (not daily). Upgrade to Premium for unlimited use (fair-use limits apply).</p>
 
-    <h2 style="margin-top:1.25rem;font-size:1rem;color:#e4e4e7">Aboneliği nasıl iptal ederim?</h2>
-    <p>iPhone: <strong>Ayarlar → Apple ID → Abonelikler → Chat Help AI Premium → İptal Et</strong></p>
+        <h3>Premium purchased but not active</h3>
+        <p>Open Settings → <strong>Restore Purchases</strong>. Make sure you are signed in with the same Apple ID. If the issue continues, email us with your App Store order number.</p>
 
-    <h2 style="margin-top:1.25rem;font-size:1rem;color:#e4e4e7">Verilerim güvende mi?</h2>
-    <p>Sohbet ekran görüntünüz yalnızca cevap üretmek için işlenir. Detaylar için <a href="../privacy/">Gizlilik Politikası</a>.</p>
+        <h3>How do I cancel my subscription?</h3>
+        <p>iPhone: <strong>Settings → Apple ID → Subscriptions → Chat Help AI Premium → Cancel</strong></p>
 
-    <h2 style="margin-top:1.25rem;font-size:1rem;color:#e4e4e7">How many free replies do I get?</h2>
-    <p><strong>3 lifetime trial</strong> generations (not daily). Upgrade to Premium for unlimited use (fair-use limits apply).</p>
+        <h3>Is my data safe?</h3>
+        <p>Your chat screenshot is processed only to generate a reply. See our <a href="../privacy/">Privacy Policy</a>.</p>
 
-    <h2 style="margin-top:1.25rem;font-size:1rem;color:#e4e4e7">Restore purchases</h2>
-    <p>Settings → <strong>Restore Purchases</strong>. Use the same Apple ID. Contact us if issues persist.</p>
+        <h3>What languages are supported?</h3>
+        <p>The app UI follows your device language (Turkish or English). Reply language can be set in Settings (Auto, Turkish, or English).</p>
+      </div>
+    </div>
 
-    <footer>© 2026 DigitalCheff · <a href="../privacy/">Privacy Policy</a></footer>
+    <div data-lang="tr">
+      <p class="lead">Sorularınız, geri bildirim veya abonelik yardımı için bize yazın. Genellikle 1–2 iş günü içinde yanıtlıyoruz.</p>
+
+      <div class="card">
+        <strong style="color:#fff">E-posta</strong><br>
+        <a class="email" href="mailto:hello@digitalcheff.com">hello@digitalcheff.com</a>
+      </div>
+
+      <h2>Sık sorulan sorular</h2>
+      <div class="faq">
+        <h3>Ücretsiz kaç hakkım var?</h3>
+        <p>Toplam <strong>3 ücretsiz deneme</strong> hakkınız vardır. Günlük yenilenmez. Premium’a geçince sınırsız kullanım (makul limitler dahilinde) açılır.</p>
+
+        <h3>Premium satın aldım ama aktif görünmüyor</h3>
+        <p>Ayarlar → <strong>Satın Alımları Geri Yükle</strong>. Aynı Apple ID ile giriş yaptığınızdan emin olun. Sorun devam ederse App Store sipariş numaranızla yazın.</p>
+
+        <h3>Aboneliği nasıl iptal ederim?</h3>
+        <p>iPhone: <strong>Ayarlar → Apple ID → Abonelikler → Chat Help AI Premium → İptal Et</strong></p>
+
+        <h3>Verilerim güvende mi?</h3>
+        <p>Sohbet ekran görüntünüz yalnızca cevap üretmek için işlenir. <a href="../privacy/">Gizlilik Politikası</a>.</p>
+
+        <h3>Hangi diller destekleniyor?</h3>
+        <p>Uygulama arayüzü cihaz dilinize göre Türkçe veya İngilizce olur. Cevap dili Ayarlar’dan seçilebilir (Otomatik, Türkçe, İngilizce).</p>
+      </div>
+    </div>
+
+    <footer>© 2026 DigitalCheff · <a href="../privacy/">Privacy Policy / Gizlilik</a></footer>
   </div>
+  <script>
+    document.querySelectorAll('.lang-toggle button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('[data-lang]').forEach(el => el.classList.remove('active'));
+        btn.classList.add('active');
+        document.querySelector('[data-lang="' + btn.dataset.show + '"]').classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
