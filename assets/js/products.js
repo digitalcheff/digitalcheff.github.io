@@ -1,4 +1,7 @@
 /** Public product catalog — only verified links and statuses. */
+export const AXIS6_APP_STORE =
+  "https://apps.apple.com/us/app/axis-6/id6777100703"
+
 export const APPS = [
   {
     name: "Chat Help AI",
@@ -163,13 +166,22 @@ export const GAMES = [
     iconSrc: "/assets/icons/axis6-128.png",
     iconBg: "linear-gradient(135deg, #f59e0b, #d97706)",
     category: { en: "Strategy", tr: "Strateji" },
-    status: "dev",
-    tags: ["iOS", "Android"],
+    status: "live",
+    tags: ["iOS", "Android soon"],
     links: [
+      {
+        label: { en: "Download on App Store", tr: "App Store'dan indir" },
+        href: AXIS6_APP_STORE,
+        primary: true,
+      },
+      {
+        label: { en: "Google Play — soon", tr: "Google Play — yakında" },
+        muted: true,
+      },
       {
         label: { en: "Privacy policy", tr: "Gizlilik politikası" },
         href: "/axis6-privacy/",
-        primary: true,
+        primary: false,
       },
     ],
   },

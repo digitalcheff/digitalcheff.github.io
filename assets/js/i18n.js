@@ -27,10 +27,12 @@ export const COPY = {
       titleEm: "from one kitchen.",
       lead:
         "DigitalCheff builds thoughtful mobile products for iOS and Android — from focus and habits to games. Every release is designed, coded, and shipped in-house.",
-      cta: "Explore apps",
+      cta: "Download AXIS 6",
+      ctaGames: "All games",
       emailCta: "Email us",
-      spotlightLabel: "Featured app",
-      spotlightPomovane: "One task. One timer. Stay in flow.",
+      spotlightLabel: "Now on the App Store",
+      spotlightAxis6: "Six rounds. One winner. Strategy on the board.",
+      spotlightCta: "Download",
       statApps: "Mobile apps",
       statWeb: "Web",
       statGames: "Games",
@@ -48,7 +50,7 @@ export const COPY = {
     games: {
       eyebrow: "Games",
       title: "Play-first experiences",
-      lead: "Mobile games — from competitive rounds to physics puzzles.",
+      lead: "AXIS 6 is live on the App Store. Android launch coming very soon.",
     },
     about: {
       eyebrow: "About",
@@ -126,10 +128,12 @@ export const COPY = {
       titleEm: "tek mutfaktan çıkıyor.",
       lead:
         "DigitalCheff, iOS ve Android için düşünülmüş mobil ürünler geliştirir — odaklanmadan alışkanlığa, üretkenlikten oyuna. Her sürüm stüdyo içinde tasarlanır, kodlanır ve yayınlanır.",
-      cta: "Uygulamaları keşfet",
+      cta: "AXIS 6'yı indir",
+      ctaGames: "Tüm oyunlar",
       emailCta: "E-posta gönder",
-      spotlightLabel: "Öne çıkan uygulama",
-      spotlightPomovane: "Tek görev. Tek zamanlayıcı. Akışta kal.",
+      spotlightLabel: "App Store'da yayında",
+      spotlightAxis6: "Altı tur. Bir kazanan. Tahtada strateji.",
+      spotlightCta: "İndir",
       statApps: "Mobil uygulama",
       statWeb: "Web",
       statGames: "Oyun",
@@ -147,7 +151,7 @@ export const COPY = {
     games: {
       eyebrow: "Oyunlar",
       title: "Oynanış odaklı deneyimler",
-      lead: "Mobil oyunlar — rekabetçi turlardan fizik tabanlı bulmacalara.",
+      lead: "AXIS 6 App Store'da yayında. Android sürümü çok yakında.",
     },
     about: {
       eyebrow: "Hakkında",

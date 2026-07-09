@@ -23,6 +23,9 @@ function renderProductCard(item, lang) {
     ? item.links
         .map((link) => {
           const label = link.label[lang] ?? link.label.en
+          if (link.muted) {
+            return `<span class="product-card__link product-card__link--muted">${label}</span>`
+          }
           return `<a class="product-card__link${link.primary ? " product-card__link--primary" : ""}" href="${link.href}"${link.href.startsWith("http") ? ' target="_blank" rel="noopener noreferrer"' : ""}>${label}</a>`
         })
         .join("")
